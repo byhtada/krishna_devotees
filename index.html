@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=480,  user-scalable=no " />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+
+    <script src="js/jquery-3.2.1.js"></script>
+
+    <script src="node_modules/js-base64/base64.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link href="js/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-ru_RU.min.js"></script>
+
+
+    <script src="node_modules/progressbar.js/dist/progressbar.min.js"></script>
+    <script                                   src="js/main.js?v1.84"></script>
+
+    <link rel="stylesheet" href="css/krishna.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="wrapper">
+
+
+
+    <div id="wrapper_login" hidden>
+
+        <div id="page_welcome" class="pages">
+            <div class="welcome_carousel owl-carousel">
+                <div class="item">
+                    <div class="logo">H<span>Y</span>LS</div>
+                    <div class="logo_img"><img src="./img/logo_img.svg" alt=""></div>
+                    <div class="welcome__header">Добро пожаловать в клуб!</div>
+                    <div class="welcome__text">Очисти и перезагрузи тело и разум за 60 дней. Уникальная программа йога центра AMYWC.
+                        Всего 45 минут в день, и ты здоров и полон сил!</div>
+                </div>
+                <div class="item">
+                    <div class="logo">H<span>Y</span>LS</div>
+                    <div class="logo_img"><img src="./img/logo_img.svg" alt=""></div>
+                    <div class="welcome__header">Добро пожаловать в клуб!</div>
+                    <div class="welcome__text">Очисти и перезагрузи тело и разум за 60 дней. Уникальная программа йога центра AMYWC.
+                        Всего 45 минут в день, и ты здоров и полон сил!</div>
+                </div>
+                <div class="item">
+                    <div class="logo">H<span>Y</span>LS</div>
+                    <div class="logo_img"><img src="./img/logo_img.svg" alt=""></div>
+                    <div class="welcome__header">Добро пожаловать в клуб!</div>
+                    <div class="welcome__text">Очисти и перезагрузи тело и разум за 60 дней. Уникальная программа йога центра AMYWC.
+                        Всего 45 минут в день, и ты здоров и полон сил!</div>
+                </div>
+                <div class="item">
+                    <div class="logo">H<span>Y</span>LS</div>
+                    <div class="logo_img"><img src="./img/logo_img.svg" alt=""></div>
+                    <div class="welcome__header">Добро пожаловать в клуб!</div>
+                    <div class="welcome__text">Очисти и перезагрузи тело и разум за 60 дней. Уникальная программа йога центра AMYWC.
+                        Всего 45 минут в день, и ты здоров и полон сил!</div>
+                </div>
+            </div>
+            <div class="container">
+                <a href="#" class="green_btn">
+                    <span class="green_btn__icon"><img src="./img/log_in.svg" alt=""></span>
+                    <span id="btn_welcome_login" class="green_btn__text">ВХОД</span>
+                </a>
+                <a href="#" class="create_account white_big_btn">СОЗДАТЬ АККАУНТ</a>
+            </div>
+        </div>
+
+        <div id="page_login" hidden>
+            <div class="wrapper_login">
+                <div class="logo">H<span>Y</span>LS</div>
+                <a href="#" class="create_account default_link">СОЗДАТЬ АККАУНТ</a>
+                <div class="login_img"><img src="img/login_img.svg" alt=""></div>
+                <div class="block_material open_materials">
+                    <div class="block_material__header">ВХОД В ЛИЧНЫЙ КАБИНЕТ</div>
+                    <div class="block_material__content">
+                        <input type="text" name="login" class="default_input" id="login" placeholder="Логин">
+                        <input type="password" name="password" class="default_input" id="password" placeholder="Пароль">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <a href="#" class="green_btn"  id="btn_login">
+                    <span class="green_btn__icon"><img src="./img/log_in.svg" alt=""></span>
+                    <span class="green_btn__text">ВХОД</span>
+                </a>
+                <a href="#" class="link_no_border">Я ЗАБЫЛ ПАРОЛЬ</a>
+            </div>
+        </div>
+
+        <div id="page_courses_select" class="pages" hidden >
+            <div class="header_line">
+                <div class="icon__header_line"><span class="icon-layers"></span></div>
+                <div class="text__header_line">Настройка курсов</div>
+            </div>
+            <div class="block_material">
+                <div class="block_material__header">нажмите на курс<br>
+                    чтобы настроить его приоритет</div>
+                <div id="div_initial_courses" class="block_material__content mb-100"></div>
+                <a href="#" id="initial_courses_save" class="green_btn mt-20"><span class="green_btn__text">Готово</span></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="wrapper_main" >
+
+
+        <div id="page_diary" class="pages"   >
+            <div class="div_header">
+                <input id="search_field" type="text" placeholder="Поиск" />
+                <div class="div_search_icon">
+                    <span id="search_icon" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </div>
+
+                <div class="navigation_items title"       data-navigate-to="title">название</div>
+                <div class="navigation_divider first"></div>
+                <div class="navigation_items subject"     data-navigate-to="subject">тема</div>
+                <div class="navigation_divider second"></div>
+                <div class="navigation_items author"      data-navigate-to="author">автор</div>
+                <div class="navigation_divider third"></div>
+                <div class="navigation_items first_verse" data-navigate-to="first_verse">первый стих</div>
+            </div>
+
+
+            <div class="wrapper_content">
+                <div class="div_content_titles" id="content_title" hidden>
+                    <div class="content_title one_string">value 1</div>
+                    <div class="content_title one_string">value 1</div>
+                    <div class="content_title one_string">value 1</div>
+                    <div class="content_title one_string">value 1</div>
+                </div>
+                <div class="div_content_titles" id="content_subject" hidden>
+                    content_subject
+                </div>
+                <div class="div_content_titles" id="content_author" hidden>
+                    content_author
+                </div>
+                <div class="div_content_titles" id="content_first_verse" hidden>
+                    content_first_verse
+                </div>
+
+
+                <div class="div_content_value">
+
+                    <div class="content_value_titles title">value 1</div>
+                    <div class="content_value_titles author">value 1</div>
+                    <div class="content_value description">value 1</div>
+
+
+                    <div class="content_value script">value 1</div>
+                    <div class="content_value verse">value 1</div>
+                    <div class="content_value wfw">value 1</div>
+                    <div class="content_value translation">value 1</div>
+
+                    <div class="content_divider"></div>
+
+                    <div class="content_value script">value 1</div>
+                    <div class="content_value verse">value 1</div>
+                    <div class="content_value wfw">value 1</div>
+                    <div class="content_value translation">value 1</div>
+
+                    <div class="content_divider"></div>
+
+                    <div class="content_value script">value 1</div>
+                    <div class="content_value verse">value 1</div>
+                    <div class="content_value wfw">value 1</div>
+                    <div class="content_value translation">value 1</div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="app_bar">
+            <span id="icon_menu" class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+
+            <div class="div_color_selector">
+                <div class="color_selector light"  data-color="light">Ярк.</div>
+                <div class="color_selector medium" data-color="medium">Ср.</div>
+                <div class="color_selector dark"   data-color="dark">Тем.</div>
+            </div>
+
+            <div class="app_bar_divider first"></div>
+            <div class="app_bar_divider second"></div>
+
+            <div class="change_size small" data-size="small">А</div>
+            <div class="change_size big  " data-size="big">А</div>
+        </div>
+
+        <div class="div_menu" hidden>
+
+
+            <div class="div_switchers" data-type="script">
+                <div class="switch_name">Скрипт</div>
+
+                <div class="switch_element">
+                    <label class=" el-switch el-switch-lg el-switch-green">
+                        <input id="switch_script" class="menu_switchers" type="checkbox" name="switch" checked hidden>
+                        <span class="el-switch-style "></span>
+                    </label>
+                </div>
+
+            </div>
+
+
+            <div class="div_switchers" data-type="script">
+                <div class="switch_name">Произношение</div>
+
+                <div class="switch_element">
+                    <label class=" el-switch el-switch-lg el-switch-green">
+                        <input id="switch_verse" class="menu_switchers" type="checkbox" name="switch" checked hidden>
+                        <span class="el-switch-style "></span>
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="div_switchers" data-type="script">
+                <div class="switch_name">Дословный перевод</div>
+
+                <div class="switch_element">
+                    <label class=" el-switch el-switch-lg el-switch-green">
+                        <input id="switch_wfw" class="menu_switchers" type="checkbox" name="switch" checked hidden>
+                        <span class="el-switch-style "></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="div_switchers" data-type="script">
+                <div class="switch_name">Смысловой перевод</div>
+
+                <div class="switch_element">
+                    <label class=" el-switch el-switch-lg el-switch-green">
+                        <input id="switch_translation" class="menu_switchers" type="checkbox" name="switch" checked hidden>
+                        <span class="el-switch-style "></span>
+                    </label>
+                </div>
+            </div>
+
+
+
+
+
+            <span id="menu_close" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+
+</html>

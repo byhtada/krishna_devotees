@@ -1,0 +1,140 @@
+body {align-items: center;}
+
+div {font-family: 'Noto Sans', sans-serif;}
+
+
+.wrapper {
+    position: relative;
+    background-color: #eceff0;
+    width: 480px;
+}
+
+
+
+
+
+.div_header {background: linear-gradient(93.71deg, #18bdcc 3.99%, #1bd0ca 100%);
+    position: relative;
+    width: 480px;
+    height: 430px;
+}
+#search_field {position: absolute; left: 40px; bottom: 110px;
+               background-color: transparent;
+    height: 40px;
+    -webkit-border-radius:  20px;
+    -moz-border-radius:     20px;
+    border-radius:          20px ;
+    border-color: #1ce5df;
+    border-width: 1px;
+    color: white;
+    padding-left: 15px;
+    width: 170px;
+    border-style: solid
+}
+#search_field::placeholder {color: #1ce5df; }
+.div_search_icon {  position: absolute;  left: 220px; bottom: 115px; }
+#search_icon {                           font-size: 24px;  color: white;}
+
+.navigation_items {color: white; font-size: 18px; display: inline-block; cursor: pointer;}
+.navigation_items.clicked {color: #1ce5df;}
+.navigation_items.title       {position: absolute; bottom: 25px; left: 38px}
+.navigation_items.subject     {position: absolute; bottom: 25px; left: 142px}
+.navigation_items.author      {position: absolute; bottom: 25px; left: 202px}
+.navigation_items.first_verse {position: absolute; bottom: 25px; left: 270px}
+
+
+
+.navigation_divider {background-color: #1ce5df; height: 18px; width: 1px}
+.navigation_divider.first  {position: absolute; bottom: 27px; left: 132px}
+.navigation_divider.second {position: absolute; bottom: 27px; left: 192px}
+.navigation_divider.third  {position: absolute; bottom: 27px; left: 260px}
+
+
+.wrapper_content {padding: 50px 20px 100px 20px; }
+
+.content_title {color: #333333; font-size: 14px; cursor: pointer}
+.one_string {padding-top: 10px; padding-bottom: 10px; }
+
+.content_divider           {height: 1px; background-color: #a3a2a4; margin: 10px 0 40px 0}
+.content_value             {font-size: 14px; color: #333333; padding: 7px 0 7px 0; text-align: center}
+.content_value_titles.title       {color: #18d6e5; font-size: 18px;  text-align: center; font-weight: bold; padding: 0 0 0 0;}
+.content_value_titles.author      {color: #18d6e5; font-size: 14px;  text-align: center; padding: 0 0 17px 0;}
+.content_value.description {padding: 0 0 7px 0;}
+.content_value.script      {}
+.content_value.verse       {font-weight: bold;}
+.content_value.wfw         {}
+.content_value.translation {}
+
+
+.app_bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 480px;
+    height: 90px;
+    display: flex;
+    background: linear-gradient(93.71deg, #18bdcc 3.99%, #1bd0ca 100%);
+    z-index: 99;
+}
+
+#icon_menu {position: absolute; right: 10px; top: 28px; font-size: 30px; color: white}
+.app_bar_divider {background-color: #1ceee8; height: 44px; width: 1px}
+.app_bar_divider.first {position: absolute; top: 23px; left: 180px}
+.app_bar_divider.second {position: absolute; top: 23px; left: 280px}
+
+.color_selector { border: 1px solid #1ceee8; color: white; width: 45px; height: 35px; font-size: 16px; text-align: center; line-height: 35px;}
+.color_selector.light  {position: absolute; left: 32px;  top: 28px; border-bottom-left-radius: 7px; border-top-left-radius: 7px; }
+.color_selector.medium {position: absolute; left: 76px;  top: 28px; }
+.color_selector.dark   {position: absolute; left: 120px; top: 28px; border-bottom-right-radius: 7px; border-top-right-radius: 7px;}
+
+.change_size {color: white}
+.change_size.small {position: absolute; top: 34px; left: 200px; font-size: 15px;}
+.change_size.big   {position: absolute; top: 19px; left: 240px; font-size: 35px;}
+
+
+
+
+
+.div_menu {
+    position: fixed;
+    padding: 15px;
+    bottom: 0;
+    left: 0;
+    width: 480px;
+    height: 260px;
+    display: none;
+    background: linear-gradient(93.71deg, #18bdcc 3.99%, #1bd0ca 100%);
+    z-index: 101;
+}
+
+.div_switchers  { position: relative; border-bottom: 1px solid #1ceee8; padding: 5px 0 5px 0; height: 44px; }
+.switch_name    { position: absolute; left: 0; top: 0; font-size: 18px; color: white; height: 40px; line-height: 40px; }
+.switch_element { position: absolute; right: 0; top: 8px; }
+
+#menu_close {color: white; font-size: 20px; position: absolute; right: 30px; top: 215px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
