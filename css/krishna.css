@@ -20,6 +20,7 @@ div {font-family: 'Noto Sans', sans-serif;}
 }
 #search_field {position: absolute; left: 40px; bottom: 110px;
                background-color: transparent;
+    outline: none;
     height: 40px;
     -webkit-border-radius:  20px;
     -moz-border-radius:     20px;
